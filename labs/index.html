@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="CS1951A" />
+    <meta name="description" content="Website for Brown CS1951A" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        document.getElementById("labs-nav").className += " active";
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../style/main.css" />
+    <title>CS1951A | Labs</title>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="other-content-container">
+        <!-- Header-->
+        <div class="container-fluid" id="header">
+          <!-- Navbar-->
+          <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-controls="#navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">cs1951a</a>
+
+            <div class="collapse navbar-collapse" id="navbar">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" id="home-nav" href="../index.html"
+                  >home</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="resources-nav"
+                  href="../resources/index.html"
+                  >resources</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="slides-nav"
+                  href="../slides/index.html"
+                  >lectures</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="assignments-nav"
+                  href="../assignments/index.html"
+                  >assignments</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="labs-nav"
+                  href="../labs/index.html"
+                  >labs</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="staff-nav"
+                  href="../staff/index.html"
+                  >staff</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="hours-nav"
+                  href="../hours/index.html"
+                  >hours</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="blogs-nav"
+                  href="../projects/index.html"
+                  >final projects</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="blogs-nav"
+                  href="../archive/index.html"
+                  >archive</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="container" id="copy">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>labs</h1>
+              <p>
+                Labs are designed to help with assignments and the deliverables
+                for the final project.
+                <br />
+                <br />
+                Every student will be assigned a lab slot during shopping
+                period. Details for lab checkoff and attendance can be found in
+                the syllabus.
+              </p>
+
+              <table class="table table-hover" id="labs-table">
+                <thead>
+                  <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>January 28 – Febuary 5</td>
+                    <td>
+                      <a href="#">Intro to SQL</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>February 6 – February 12</td>
+                    <td>
+                      <a href="#">Pandas/Numpy Lab</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>February 13 – February 19</td>
+                    <td>
+                      <a href="#">Intro to MapReduce</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>February 20 – February 26</td>
+                    <td>
+                      <a href="#">Stats Part 1</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>February 27 – March 5</td>
+                    <td>
+                      <a href="#">Stats Part 2</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>March 13 – March 19</td>
+                    <td>
+                      <a href="#">Intro to Viz</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>March 20 – March 26</td>
+                    <td>
+                      <a href="#">ML Fairness</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>March 27 – April 2</td>
+                    <td>
+                      <a href="#">Matrix Factorization</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>April 3 – April 9</td>
+                    <td>
+                      <a href="#">Data Privacy</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="footer">
+        <div class="container">
+          <p>
+            &copy; 2020 CS1951A Staff | Computer Science Department | Brown
+            University
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
