@@ -137,8 +137,8 @@ items = soup.find(ul).find_all("li")
             <strong>IMPORTANT:</strong> Set the parameter "chartCloseOnly" to <code>True</code> when you request from the chart endpoint to avoid immediately reaching your API call limit! (Read about URL parameters <a href="https://en.wikipedia.org/wiki/Query_string">here</a>.)</p>
 
             <p>Using the <a href="https://iexcloud.io/docs/api/#news">news endpoint</a>, you should get the articles for a specific stock. Then, you should count how many articles were returned by the API.
-                We will define recently as <strong>since February 1, 2020 00:00:00 </strong>. The news API includes
-                the unix epoch time for each article in <strong>milliseconds</strong>. You should calculate the epox time of February 1, 2020 00:00:00 and convert to milliseconds (multiply by 1000).
+                We will define recently as <strong>since February 1, 2021 00:00:00 (GMT) </strong>. The news API includes
+                the unix epoch time for each article in <strong>milliseconds</strong>. You should calculate the epox time of February 1, 2021 00:00:00 (GMT) and convert to milliseconds (multiply by 1000).
                 Feel free to hardcode this value and use websites to calculate it rather than calculate it by hand.
             </p>
 
