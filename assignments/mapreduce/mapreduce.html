@@ -724,7 +724,7 @@ $ python similarities.py -d PATH/TO/data
 
         Reducer1: list of (word, count) -> (letter, (word, count)) </br>
         &nbsp;&nbsp;&nbsp;<span style="color:#776e6e"> total = 0</br> &nbsp;&nbsp;&nbsp;&nbsp;for word, count in values: </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total += count</br>
-            &nbsp;&nbsp;&nbsp;&nbsp;emit word[0], (word, total)</span></br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;emit word[0], (word, total)</span></br></br>
 
         Reducer2: list of (word, count) -> (letter, word)</br>
         &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#776e6e">for word, count in values[:10]:</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;emit letter, word</span>
