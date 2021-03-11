@@ -107,7 +107,7 @@
 
             </p>
 
-            <p>With your new statistical expertise, you get to work, selecting a significance level  of 0.05 and running your 
+            <p>With your new statistical expertise, you get to work, selecting a significance level &alpha; of 0.05 and running your 
                 experiment on a group of volunteers as well as a control group given sugar pills. You set up 10 hypotheses:
                 <p>
                 <li>H<sub>0,i</sub>: The drug has no impact on symptom i</li>
@@ -122,9 +122,10 @@
             </p>
 
             <p>What went wrong? Remember what the significance level means - it is the probability of rejecting the null hypothesis
-             given that it is true. With a single hypothesis, the risk of a false discovery under the null hypothesis was exactly . 
-             Now, with 10 simultaneous tests, assuming all 10 null hypotheses in the control group, the odds of making no false discoveries is  
-             - that's a  change of having at least one false discovery! No wonder the sugar pills appeared to be so helpful.
+             given that it is true. With a single hypothesis, the risk of a false discovery under the null hypothesis was exactly &alpha; : 5%. 
+             Now, with 10 simultaneous tests, assuming all 10 null hypotheses in the control group, the odds of making no false discoveries is
+             0.95^10 = 60% 
+             - that's a 40% change of having at least one false discovery! No wonder the sugar pills appeared to be so helpful.
 
             </p>
 
