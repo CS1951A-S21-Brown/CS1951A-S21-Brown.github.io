@@ -17,7 +17,7 @@
                 <h1>Assignment 6 <small>&laquo; Data Visualization &raquo;</small></h1>
             </div>
             <div id="assignment-header">
-                <h2>Due: 11:59pm March 16, 2021 (ET)</h2>
+                <h2>Due: 11:59pm March 25, 2021 (ET)</h2>
                 <p>Bad Data Viz can be found everywhere.
                     So, please let us indulge by listing just a few examples here:
                 </p>
@@ -65,13 +65,14 @@
         <br><hr><br>
         <div id="prerequisite">
             <h2>Before you begin</h2>
+            <br>
+            <h4>Do the Intro to Viz Lab!</h4>
             <p>
                 Many students find this assignment to be one of the most challenging in the class.
                 This is because JavaScript is a new language and framework for many, and we don't formally teach it.
                 We <strong>HIGHLY</strong> recommend you walk through the Data Visualization lab listed
                 <a href="https://cs1951a-s21-brown.github.io/labs/index.html" target="_blank">here</a> before you begin.
             </p>
-            <p><b>The solution code for the D3 lab, available after you have checked in with your Lab TAs</b>, is a great place for starter code on how to create your own graphs for this assignment.</p>
             <p>
                 Since this project is more free-form than previous assignment, there is no solution code for this assignment.
                 We will do our best to debug your dashboard during TA hours, but TAs at hours can only be so helpful
@@ -80,11 +81,23 @@
                 A few tips:
                 <ul>
                     <li>Start early!</li>
-                    <li>Review the D3 lab and refer to the solution code for certain features (i.e. colors, tooltips, etc.)</li>
+                    <li>Do/review the D3 lab and refer to the solution code for part 2 for certain features (i.e. colors, tooltips, etc.)</li>
                     <li>Look for resources online <strong>(DO NOT COPY!)</strong> and do your best</li>
                 </ul>
-                We hope for some this will be a fun assignment and closely resemble future data science work!
             </p>
+            <br>
+            <h4>Accessible Data Visualization</h4>
+            <p>Before you start designing your dashboard, read 
+                <ul>
+                    <li><a href="https://medium.com/nightingale/accessibility-is-at-the-heart-of-data-visualization-64a38d6c505b">“Why Accessibility Is at the Heart of Data Visualization,”</a> paying particular attention to the “Design equivalent experiences for all your readers” section.
+                    </li>
+                    <li><a href="https://www.betterment.com/resources/accessible-data-visualization/">“A Comprehensive Guide to Accessible Data Visualization,”</a> which provides specific suggestions to make data visualizations accessible to people with visual impairments. 
+                    </li>
+                </ul>
+                Keep the principles from the readings in mind as you design and implement your dashboard. You aren’t required to implement these best practices in your dashboard, but note the times during your design and implementation process where you could act on suggestions in the readings. You’ll answer questions about your observations after completing the dashboard.
+            </p>
+            <br>
+            <p>We hope for some this will be a fun assignment and closely resemble future data science work!</p>
         </div>
         <br><hr><br>
         <div id="setting-up">
@@ -98,19 +111,20 @@
             </p>
             <p>
                 The only stencil requirement that we have is that your code must consist of <code>index.html</code>, <code>main.js</code>, <code>main.css</code>, and relevant files.
-                Your folder/repository can take any form that you want, as long as the files above are in the root of your folder (alongside with <code>zip_assignment.py</code>).
-                On submission, everything that you included in your code/repository will be included in the zip to ensure the functionality of your project.
+                Please refer to the submission section of this handout for submission specifications.
             </p>
             <h3>Run Specifications</h3>
             <p>
                 To view your visualization in the browser, we're going to load the webpage via a local web server. Navigate
                 to the directory containing your <code>index.html</code> file, and run
-                <pre>python -m http.server 8000</pre>
+                <pre>python3 -m http.server 8000</pre>
             </p>
             <p>
                 You then can open a browser to the url <code>http://localhost:8000/index.html</code> to view your
                 dashboard.
             </p>
+            <p>If you are using the department machine to code and run your python server, you can refer to <a href="https://docs.google.com/document/d/1Opd4438n_BH1GfGwx69wfkfFGolhacOiOlCvGD-HcfE/edit?usp=sharing" target="_blank">this instruction</a> 
+                to learn how to view your product locally.</p>
         </div>
         <br><hr><br>
         <div id="assignment">
@@ -264,32 +278,27 @@
             Here are some ways to earn bonus points:
             <ol>
                 <li>
-                    You implement some form of dynamic stats calculation. By dynamic, we mean that it updates
+                    <p>You implement some form of dynamic stats calculation. By dynamic, we mean that it updates
                     depending on which data is being shown. Our example dashboard calculates a regression line,
-                    but you can show box plot whiskers, calculate percentiles, calculate a t-test.
-                    <br>
-                    <br>
-                    If you choose to add this, please add a note below your dashboard and written answers which
-                    in 1-3 sentences explains what you did and why it's statistical. <b>(10 points)</b>
+                    but you can show box plot whiskers, calculate percentiles, calculate a t-test.</p>
+                    <p>If you choose to add this, please add a note below your dashboard and written answers which
+                    in 1-3 sentences explains what you did and why it's statistical. <b>(10 points)</b></p>
                 </li>
                 <br>
                 <li>
-                    You may attempt one or both of these and get up to an additional 20 points!
-                    <br>
-                    <br>
-                    For some of the provided data sets and questions, we ask about geographic impact.
+                    <p>You may attempt one or both of these and get up to an additional 20 points!</p>
+                    
+                    <p>For some of the provided data sets and questions, we ask about geographic impact.
                     One way to show this is with a bar/scatter/line graph.
                     Another possibility is to show this on a geographic map!
-                    If one of your graphs is a "Map type" (https://www.d3-graph-gallery.com/) you earn an additional <b>10 points</b>.
-                    <br>
-                    <br>
-                    For other data sets we discuss the relationship between particular data points,
+                    If one of your graphs is a "Map type" (https://www.d3-graph-gallery.com/) you earn an additional <b>10 points</b>.</p>
+                    
+                    <p>For other data sets we discuss the relationship between particular data points,
                     particularly in a graph way. i.e. how many hops between 2 actors on Netflix.
                     You can use D3 to make and visualize this graph!
-                    If one of your graphs is a a "Flow type" (https://www.d3-graph-gallery.com/) you earn an additional <b>10 points</b>.
-                    <br>
-                    <br>
-                    If you have any questions about whether a particular chart qualifies for either of these, please ask on piazza.
+                    If one of your graphs is a a "Flow type" (https://www.d3-graph-gallery.com/) you earn an additional <b>10 points</b>.</p>
+                    
+                    <p>If you have any questions about whether a particular chart qualifies for either of these, please ask on piazza.</p>
                 </li>
             </ol>
             <br>
@@ -328,37 +337,21 @@
                 every question directly, but should at a high level address the main questions. (10 points)</li>
                 <li>List 3 reasons why D3 was helpful and improved your visualization (6 points)</li>
                 <li>List 3 reasons why D3 would <strong>not</strong> be the best tool for creating a visualization (6 points)</li>
-                <br>
-                <p>
-                    Hopefully through this exercise, you've all seen how data visualizations are powerful tools that we can leverage
-                    to efficiently and easily communicate ideas. However, not all graphs/charts are made equal. Read this article on
-                    <a href="https://venngage.com/blog/misleading-graphs/?fbclid=IwAR3QeCDEq59E8VSFL3nSxyUDr5qtDB4i5pk7pUsi09TBEMgYSr9qTJIHwiA">
-                        misleading graphs</a> and answer the following questions underneath your dashboard in <code>index.html</code> as well.
-                </p>
-                <br>
-                <li>
-                    Give two different ways in which graphs may confuse or mislead viewers. What are ways to avoid this
-                    or fix these issues? (4 points)
+
+                <h3>Accessible Data Visualization (10 points)</h3>
+                <li>Evaluate the accessibility of your dashboard based on the readings in the “Before you begin” section. What kinds of users might find this dashboard accessible and who might have more difficulty? What additional actions might you take to make this dashboard more accessible to all audiences? Your response should refer to at least one of the readings and be about 1 paragraph.
                 </li>
-                <li>
-                    Data visualizations can be found everywhere. Find a real world example of a strong data graphic and explain
-                    what it does well. Next, find a not-as-good data graphic and explain what it does poorly and
-                    how to improve it. Please include a photo or link of your examples alongside your answer. Some cool places
-                    to look for visualizations could be on Fivethirtyeight, the Economist, or perhaps even the course website! (6 points)
+                <li>Reflect on the stages of your design and implementation process when you could have taken steps to make your dashboard more accessible to all audiences. What are some factors that kept you from taking these steps? (a few sentences)
                 </li>
             </ol>
             <br>
-            <p>
-                If you enjoyed the reading or want to see some more real life examples of flawed visualizations (and how they could be
-                improved), feel free to read the following articles as well. However, these are not required.
-            </p>
+            <h4>
+                Additional Information
+            </h4>
             <ul>
-                <li> <a href="https://qz.com/580859/the-most-misleading-charts-of-2015-fixed/?fbclid=IwAR3ZiPLVREpjVy5A4YhFYCIL8XEaIk13a4UHRZzXAi4s8F6_jf_a44X4XDM">
-                        The Most Misleading Charts of 2015, Fixed</a>
+                <li> If you’re interested in more considerations surrounding the social impact of data visualizations, check out the “Design Process Questions” and “Design Output Questions” for each principle in Section 3 of <a href="https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf?sequence=1&isAllowed=y">"Feminist Data Visualization."</a>
                 </li>
-                <li>
-                    <a href="https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368">
-                        Mistakes, we've drawn a few - The Economist</a>
+                <li> If you’re interested in the relationship between data analysis, visualization, and COVID-19 misinformation, check out <a href="http://vis.csail.mit.edu/covid-story">“The Data Visualizations Behind COVID-19 Skepticism.”</a>
                 </li>
             </ul>
 
@@ -384,7 +377,7 @@
             <p>
                 After the late submission deadline, we will send out instructions for everyone to set up the Github Pages site of their assignment, so your work can be seen by us (and the public). This is crucial for us to grade your assignment, and we expect everyone to set up their Github Page within 48 hours of our notification (by <b>March 20th, 11:59PM ET</b>).
             </p>
-            <h4>Important!</h4>
+            <h3>Important!</h3>
             <ul>
                 <li>
                     <p>
@@ -406,7 +399,7 @@
         <div id="credit">
             <h2>Credits</h2>
             <p>
-                This assignment was created in Spring 2020 by Arvind Yalavarti (ayalava2) and Joshua Levin (jlevin1), updated by Tiffany Nguyen (tnguye72), Neal Mahajan (nmahaja1), and Nam Do (ndo3) in Spring 2021.
+                This assignment was created in Spring 2020 by Arvind Yalavarti (ayalava2) and Joshua Levin (jlevin1), updated by Tiffany Nguyen (tnguye72), Neal Mahajan (nmahaja1), and Nam Do (ndo3) in Spring 2021. The accessibility component was added by Lena Cohen, Evan Dong, and Gaurav Sharma.
             </p>
         </div>
             
